@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>前言 &mdash; heyulin_moki_work 1.0 文档</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="heyulin_moki_work 1.0 文档" href="index.html"/>
+        <link rel="next" title="涉及结构" href="design.html"/>
+        <link rel="prev" title="Welcome to heyulin_moki_work’s documentation!" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> heyulin_moki_work
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">前言</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">目标</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">涉及系统</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">涉及库</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">涉及结构</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">heyulin_moki_work</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>前言</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/preface.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>前言<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id2">
+<h2>目标<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>工作以来，我所涉及的项目，许多都是前后端分离的情况。这些部分的开发方式与普通的django admin不同。所有的部分都需要自己来封装，这就关乎于个人的喜好与能力，如果不用文档说明，别人维护会比较困难。</p>
+<p>随着工作的进展，自己的设计思路越来越成熟，（至少我是这样认为的）。但是不同时期，编写的程序也有不同的设计思路，我本有意重构老系统，无奈工作任务不断，难以有空闲时间，而且一旦系统上线就，公司领导也无重构的需求。</p>
+<p>现在我唯一能做的就是，编写这个文档，为了以后的接手的同事能够明白我当时的思路，更轻松的维护项目。</p>
+</div>
+<div class="section" id="id3">
+<h2>涉及系统<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>主要系统涉及PTS,PS,APG，以及夭折了的TMS考勤系统（因为是Hr提的需求，现Hr集体被更换，估计该系统不会上线了）。</p>
+<ul class="simple">
+<li>PTS有kanban和danshboard模块</li>
+<li>PS有sub_info模块</li>
+<li>APG全部</li>
+<li>TMS考勤部分由于不太可能被维护了，所以就不描述了。</li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>涉及库<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>我想要提到的主要是两个前端库，<strong>angularjs</strong>和<strong>vuejs</strong>。</p>
+<p>在我之前，工作开发web系统主要使用django admin+django suit的方式，这种开发方式使得开发效率高，可维护性强。但是局限性也很明显。难以开发出灵活的前端页面，提升用户体验。大家很简单的就能想到解决办法，即简单页面利用django suit，复杂页面自己用前端实现，两者合并在一个界面下，现在开发的系统APG即是如此。</p>
+<p>自定义页面，最大的问题有两个: 1)开发效率；2)可维护性。在最近的半年时间里，我一直都在努力的提升自定义页面的开发效率和可维护性。</p>
+<p>我入职前，前端编程也只是停留在jquery阶段，由于js的各种特性，使得维护和调试js代码特别困难，一度让我厌恶前端开发。在入职后，由于工作需要，我深入研究了一些框架，并且将他们应用到项目中来。当接触到angularjs时，觉得这就是我要的那种框架。在TMS考勤系统中，我得到了大量的锻炼，对angularjs比较熟悉。所以在PTS中kanban与dashboard模块使用了这种框架，正因为也angularjs的帮助，才能完成如此复杂的前端页面。</p>
+<p>APG算得上是一个全新的开始。因为我使用了新的前端框架vuejs。在有一定实践经验后，我知道angularjs这种声明式的编程方式，最重要的功能是什么，我需要的是什么。这个时候我遇到了vuejs。这是google的一位华人员工开发并维护的开源项目。vuejs令我感到震惊，我所需要的angularjs能提供的功能，它都能提供，而且让人更舒服，维护性更强，自身的体积也更小，速度更快。但是其号称学习更简单，我倒不这么认为。因为除了官方的文档，其他第三方的资料较少，stackoverflow的问题也很少，对于初学者很难用好。如果你学习vuejs遇到困难，不妨先用用angularjs，基本上思想是相通的。</p>
+<p><strong>所以，如果你需要维护PTS的kanban和dashboard模块，你需要了解一下angularjs，如果你要维护APG，你需要了解一下vuejs。</strong></p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="design.html" class="btn btn-neutral float-right" title="涉及结构" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to heyulin_moki_work’s documentation!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; 版权所有 2016, heyulin.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
